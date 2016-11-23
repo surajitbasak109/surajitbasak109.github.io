@@ -33,7 +33,7 @@ footer {
 }
 
 .footer-above {
-    background: #0f518a;
+    background: #05355f;
     padding-top: 50px;
 }
 
@@ -61,6 +61,17 @@ footer {
     border-radius: 100%;
     line-height: 45px;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ededed;
+}
+
 
 @media (min-width: 768px) {
     .header-content {
