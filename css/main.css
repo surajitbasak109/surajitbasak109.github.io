@@ -1,0 +1,81 @@
+header {
+    background: linear-gradient(to left, #555, #333);
+    color: #fff;
+}
+
+.header-content {
+    padding: 150px 0;
+    height: 100vh;
+}
+.main-heading {
+    font-size: 3;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.about {
+    background: linear-gradient(to left, #a23c0b, #774e11);
+    color: #fff;
+}
+
+.contact {
+    background: #eee;
+}
+
+.project-column {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: #fff;
+}
+
+.footer-above {
+    background: #0f518a;
+    padding-top: 50px;
+}
+
+.footer-below {
+    background: #0a2048;
+    padding: 20px 0;
+}
+
+.social {
+    margin-bottom: 50px;
+}
+.social>li{
+    display: inline;
+    margin-left: 5px;
+}
+.social .outline {
+    color: #fff;
+    border-color: #fff;
+}
+.social .circle {
+    border: 2px solid;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 45px;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        height: 100vh;
+    }
+
+    nav.navbar-default.affix-top {
+        background: transparent;
+        border: transparent;
+        color: #fff;
+    }
+    nav.navbar-default.affix-top .navbar-collapse {
+        border-color: transparent;
+    }
+    nav.navbar-default.affix-top a {
+        color: #fff;
+    }
+}
