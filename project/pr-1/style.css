@@ -1,0 +1,180 @@
+header {
+    background-image: url(img/home2.jpg), linear-gradient(to left, #4a535c, #726c4a);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    min-height: 100vh;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    margin: 0;
+}
+
+header h2, section h2 {
+    font-family: Roboto, sans-serif;
+    margin: 30px 0;
+}
+
+header h3, section h3 {
+    font-family: Lato, sans-serif;
+}
+
+header h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+header h3 {
+    font-size: 24px;
+    margin: 10px 0 30px;
+}
+
+header .btn-primary {
+    background: #0bb1b9;
+}
+
+header .btn-primary:hover {
+    background: #11a7a7;
+}
+
+.section1 {
+    background: #3c3b3b;
+    color: #fff;
+}
+
+.section1 h2 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.section1 form {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+}
+
+.pwc {
+    padding: 0;
+}
+
+.pwc label {
+    display: block;
+}
+
+header, section {
+    padding: 100px 0;
+}
+
+.section1 form .btn-success {
+    background: #0bb1b9;
+    border-color: #0bb1b9;
+}
+
+.section1 h3 {
+    font-size: 20px;
+    margin: 30px 0;
+    width: 92%;
+}
+
+.section1 h4 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.section1 p {
+    font-size: 14px;
+}
+
+.subs1, .subs2 {
+    border-bottom: 1px solid #bbb;
+}
+
+.subs2 h3 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 200px 0;
+    }
+
+    section {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+
+    .subs1, .subs2 {
+        padding: 50px 0;
+    }
+}
+
+.section3 {
+    background: #ededed;
+}
+
+
+.text-info {
+    color: #03a8b3;
+}
+
+.footer-above {
+    padding-top: 50px;
+    background: #004e5a;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-above li {
+    list-style: none;
+}
+
+.footer-below {
+    padding: 10px 0 0;
+    color: #fff;
+    background: #0b6767;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #eee;
+    text-decoration: none;
+}
+
+.social {
+    list-style: none;
+}
+.social li {
+    display: inline;
+}
+
+.social li a {
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 15px;
+    width: 50px;
+    hight: 50px;
+    text-align: center;
+}
+
+.social li a:hover,
+.social li a:focus {
+    background: #a0940a;
+    border-color: #a1941a;
+}
+
+.so h2 {
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+footer h3 {
+    margin: 10px 0;
+}
