@@ -1,0 +1,29 @@
+* {
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.disabled {
+	cursor: not-allowed;
+	background-color: #eee;
+	opacity: 1;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.note {
+	background-color: #fff1ca;
+	display: block;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+footer {
+    padding: 50px 0 35px;
+}
+
+footer p {
+    margin: 0;
+}
