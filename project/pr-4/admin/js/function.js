@@ -13,7 +13,7 @@ $(function() {
     if (href.indexOf('view_post.html') !== -1) {
         basicBlog.updateFullPostTable();
     }
-    if (href.indexOf('index.html') !== -1) {
+    if (href.indexOf('index.html') !== -1 || href[href.length -1] === '/') {
         basicBlog.updatePostTable(5);
     }
     if (href.indexOf('add_post.html') !== -1) {
