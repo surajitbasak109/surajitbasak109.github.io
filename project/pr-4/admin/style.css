@@ -2,6 +2,10 @@
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.help-block {
+	color: #2f5d2d;
+}
+
 .disabled {
 	cursor: not-allowed;
 	background-color: #eee;
@@ -27,3 +31,76 @@ footer {
 footer p {
     margin: 0;
 }
+
+#update_dialogue {
+    transition: all .3s ease-in-out;
+    margin: 10px 0;
+    font-weight: 600;
+    background: linear-gradient(to right, #cdfbd9, ghostwhite);
+    padding: 4px 10px;
+}
+
+.error {
+    background: linear-gradient(to right, #f9e2e2, #fff6f6);
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+textarea#result {
+    min-height: 160px;
+}
+
+.edit-table {
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.edit-table th {
+    padding: 3px 6px;
+    background: #f3f3f3;
+}
+
+.edit-table td {
+    padding: 4px 6px;
+    border-top: 1px solid #cdcdcd;
+}
+
+.nav-panel {
+    list-style: none;
+}
+
+.nav-panel>li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
