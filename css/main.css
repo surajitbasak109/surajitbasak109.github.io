@@ -260,6 +260,31 @@ nav.navbar-default.affix-top a {
     color: #fff;
 }
 
+
+
+
+section#blog {
+    background: #333;
+    color: #fff;
+}
+
+#blog hr.star-light:after {
+    background: #333;
+}
+
+#post_preview a {
+    color: #3ba4ff;
+}
+
+.post-preview {
+    background: #444;
+    border-bottom: 3px solid #0e638c;
+    border-radius: 3px;
+    height: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 /* Media Query  */
 @media (min-width: 768px) {
     .header-content {
