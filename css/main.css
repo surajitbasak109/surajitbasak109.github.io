@@ -34,7 +34,9 @@ section h2 {
 }
 
 .about {
-    background: linear-gradient(to left, #a23c0b, #774e11);
+    background: -webkit-radial-gradient(center, circle closest-corner, #106d82 0%, #000 100%);
+    background: -moz-radial-gradient(center, circle closest-corner, #106d82 0%, #000 100%);
+    background: radial-gradient(center, circle closest-corner, #106d82 0%, #000 100%);
     color: #fff;
 }
 
@@ -223,7 +225,7 @@ hr.star-primary:after {
 }
 
 .about hr.star-light:after {
-    background: #8c450e;
+    background: #0e6275;
     color: #fff;
 }
 
