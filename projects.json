@@ -1,73 +1,73 @@
 [
-	{
-		"title": "Wiki Terminal",
-		"link": "https://codepen.io/regexp/full/XNPmWj",
-		"img": "https://i.imgur.com/OViAFCx.jpg"
+    {
+        "title": "Wiki Terminal",
+        "link": "http://codepen.io/regexp/full/XNPmWj",
+        "img": "http://i.imgur.com/OViAFCx.jpg"
 	},
-	{
-		"title": "Javascript Simon",
-		"link": "http://codepen.io/regexp/full/YpowXz/",
-		"img": "https://s28.postimg.org/40qanynj1/freecodecamp_simon_game.png"
+    {
+        "title": "Javascript Simon",
+        "link": "http://codepen.io/regexp/full/YpowXz/",
+        "img": "https://s28.postimg.org/40qanynj1/freecodecamp_simon_game.png"
 	},
-	{
-		"title": "Javascript Tic Tac Toe",
-		"link": "http://codepen.io/regexp/pen/zoQMXm",
-		"img": "https://s27.postimg.org/qojkf0k1f/freecodecamp_tic_Tac_Toe.png"
+    {
+        "title": "Javascript Tic Tac Toe",
+        "link": "http://codepen.io/regexp/pen/zoQMXm",
+        "img": "https://farm1.staticflickr.com/666/31932088825_828ccd8e11_b.jpg"
 	},
-	{
-		"title": "Pomodoro Clock",
-		"link": "https://codepen.io/regexp/full/Pbvwqp/",
-		"img": "https://i.imgur.com/F8Dpnbo.png"
+    {
+        "title": "Pomodoro Clock",
+        "link": "https://codepen.io/regexp/full/Pbvwqp/",
+        "img": "https://i.imgur.com/F8Dpnbo.png"
 	},
-	{
-		"title": "Javascript Calculator",
-		"link": "http://codepen.io/regexp/full/VmNBqY/",
-		"img": "https://i.imgur.com/JGNYNHl.png"
+    {
+        "title": "Javascript Calculator",
+        "link": "http://codepen.io/regexp/full/VmNBqY/",
+        "img": "https://i.imgur.com/JGNYNHl.png"
 	},
-	{
-		"title": "Twitchtv JSON API",
-		"link": "https://codepen.io/regexp/full/XNaaWZ/",
-		"img": "https://s28.postimg.org/7owfahpj1/freecodecamp_twitchtv_api.jpg"
+    {
+        "title": "Twitchtv JSON API",
+        "link": "https://codepen.io/regexp/full/XNaaWZ/",
+        "img": "https://s28.postimg.org/7owfahpj1/freecodecamp_twitchtv_api.jpg"
 	},
-	{
-		"title": "Local Weather App",
-		"link": "http://codepen.io/regexp/full/yVoNaZ/",
-		"img": "https://s29.postimg.org/98qwxrr0n/freecodecamp_weather_api.jpg"
+    {
+        "title": "Local Weather App",
+        "link": "http://codepen.io/regexp/full/yVoNaZ/",
+        "img": "https://farm6.staticflickr.com/5608/31092501144_abe1a53c2a_b.jpg"
 	},
-	{
-		"title": "Random Quote Machine",
-		"link": "https://codepen.io/regexp/full/rWwpvo/",
-		"img": "https://s29.postimg.org/oueca6jpz/freecodecamp_random_code_machine.png"
+    {
+        "title": "Random Quote Machine",
+        "link": "http://codepen.io/regexp/full/rWwpvo/",
+        "img": "https://farm1.staticflickr.com/592/31784957262_fb12e8be2f_b.jpg"
 	},
-	{
-		"title": "Personal Portfolio Webpage",
-		"link": "https://codepen.io/regexp/full/Ropzjb/",
-		"img": "https://i.imgur.com/cjgSN4z.jpg"
+    {
+        "title": "Personal Portfolio Webpage",
+        "link": "http://codepen.io/regexp/full/Ropzjb/",
+        "img": "http://i.imgur.com/cjgSN4z.jpg"
 	},
-	{
-		"title": "Tribute Page",
-		"link": "https://codepen.io/regexp/full/LbWLGM/",
-		"img": "https://i.imgur.com/llAR0zz.jpg"
+    {
+        "title": "Tribute Page",
+        "link": "http://codepen.io/regexp/full/LbWLGM/",
+        "img": "http://i.imgur.com/llAR0zz.jpg"
 	},
-	{
-		"title": "Wikipedia Viewer",
-		"link": "https://codepen.io/regexp/full/VmzmKK/",
-		"img": "https://i.imgur.com/V9B05ax.png"
+    {
+        "title": "Wikipedia Viewer",
+        "link": "https://codepen.io/regexp/full/VmzmKK/",
+        "img": "http://i.imgur.com/V9B05ax.png"
 	},
-	{
-		"title": "Project Web Design",
-		"link": "project/pr-1/",
-		"img": "img/pr-1.png"
+    {
+        "title": "Project Web Design",
+        "link": "project/pr-1/",
+        "img": "img/pr-1.png"
 	},
-	{
-		"title": "Project Web Design",
-		"link": "project/pr-2/",
-		"img": "img/pt-2.png"
+    {
+        "title": "Project Web Design",
+        "link": "project/pr-2/",
+        "img": "img/pt-2.png"
 	},
-	{
-		"title": "Future Fight Web Page",
-		"link": "project/mff/",
-		"img": "img/pr-3.jpg"
+    {
+        "title": "Future Fight Web Page",
+        "link": "project/mff/",
+        "img": "img/pr-3.jpg"
 	}
 
 ]
