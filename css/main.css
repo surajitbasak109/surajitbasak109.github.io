@@ -1,5 +1,5 @@
 header {
-    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/flowers.png), linear-gradient(to left, #222, #292929);
+    background: url(https://i.imgur.com/8TbuWlb.png), linear-gradient(to left, #222, #292929);
     background-attachment: fixed;
     color: #fff;
 }
@@ -267,12 +267,12 @@ nav.navbar-default.affix-top a {
 section#blog {
     background: #333;
     background: -webkit-radial-gradient(center, circle closest-corner, #24613e 0%, #2c6a45 100%);
-    background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/pool_table.png);
+    background-image: url(https://i.imgur.com/ZEpNUzm.png);
     color: #fff;
 }
 
 #blog hr.star-light:after {
-    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/pool_table.png);
+    background: url(https://i.imgur.com/ZEpNUzm.png);
 }
 
 #post_preview a {
@@ -368,11 +368,11 @@ section#blog {
 }
 
 #project {
-    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/flowertrail.png);
+    background: url(https://i.imgur.com/nWA7GUk.png);
 }
 
 #project hr.star-primary:after {
-    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/flowertrail.png);
+    background: url(https://i.imgur.com/nWA7GUk.png);
 }
 
 .navbar-fixed-top.affix a.page-scroll {
