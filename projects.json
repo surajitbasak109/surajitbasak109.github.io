@@ -5,10 +5,15 @@
         "img": "https://i.imgur.com/OViAFCx.jpg"
 	},
     {
-        "title": "Javascript Simon",
-        "link": "http://codepen.io/regexp/full/YpowXz/",
-        "img": "https://s28.postimg.org/40qanynj1/freecodecamp_simon_game.png"
-	},
+        "title": "Code Editor",
+        "link": "https://codepen.io/regexp/full/jyOxar/",
+        "img": "https://i.imgur.com/kG0H43s.png"
+    },
+	{
+		"title": "Javascript Simon",
+		"link": "http://codepen.io/regexp/full/YpowXz/",
+		"img": "https://s28.postimg.org/40qanynj1/freecodecamp_simon_game.png"
+    },
     {
         "title": "Javascript Tic Tac Toe",
         "link": "http://codepen.io/regexp/pen/zoQMXm",
