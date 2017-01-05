@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/crosses.png);
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #015454;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #a9270b;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.title, .name {
+    text-align: center;
+}
+
+#root {
+    background: #fff;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+.working-experience ul {
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+.education-qualification {
+    background: #f9f9f9;
+}
+
+.education-qualification h3 {
+    font-size: 28px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.education-qualification:before, .education-qualification:after {
+    content: '';
+    display: table;
+}
+
+.education-qualification:after {
+    clear: both;
+    height: 1px;
+}
+
+.secondary, .bsc {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+.secondary, .bsc {
+    width: 33.3%;
+    float: left;
+    border: none;
+}
+
+hr {
+    width: 260px;
+    height: 4px;
+    background: black;
+    display: block;
+    margin: 5px 0 10px;
+}
+
+.education-qualification hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 336px;
+}

@@ -1,0 +1,61 @@
+{
+	"Name": "Surajit Basak",
+	"Present Address": {
+		"Village": "Chayan Para",
+		"Landmark": "Near By Kali Saha More",
+		"Post Office": "Ghogomali",
+		"District": "Jalpaiguri",
+		"City": "Siliguri",
+		"State": "West Bengal",
+		"Country": "India",
+		"Pin": 734006,
+		"Contact No": 9749129272,
+		"Email": "<a href='mailto:surajitbasak109@gmail.com'>surajitbasak109@gmail.com</a>"
+	},
+	"Career Objective": "To join a reputed organization that has an environment of learning oppouptinities along with regular jobs to develop professional competence and better performance.",
+	"Working Experience": {
+		"Experience 1": "Worked in a computer cafe for 18 months.",
+		"Experience 2": "Worked as CSA in Vodafone Customer Care for 1 year.",
+		"Experience 3": "Worked with friend for 2 years on tutoring service."
+	},
+	"Education Qualification": {
+		"Secondary": {
+			"Subject": "All Subject",
+			"Board": "W.B.B.S.E",
+			"Year of Passing": "2005",
+			"Marks Obtained": "60%"
+		},
+		"Higher Secondary": {
+			"Subject": "Biology, Chemistry, Physics, Geogrophy",
+			"Board": "W.B.B.H.S.E",
+			"Year of Passing": "2007",
+			"Marks Obtained": "61%"
+		},
+		"BSc": {
+			"Type": "General",
+			"Subject": "Zoology, Botany, Chemistry",
+			"Board": "NBU",
+			"Year of Passing": "2011",
+			"Marks Obtained": "53%"
+		}
+	},
+	"Computer Knowledge": {
+		"Basics": "I have basics knowledge in Computer application",
+		"Operating System": "I have in-depth knowledge in debian based OS, like Ubuntu, Linux Mint, Elementary OS."
+	},
+	"Web Technology": {
+		"Web Design": "I have good knowledge in HTML5 and CSS3.",
+		"Front-End Web Development": "I have good knowledge in Javascript and jQuery. I give more priority in Javascript as it is interesing scripting language to make site more dynamic. Also worked with Node js.",
+		"Additional Information": "I know how to handle JSON file, also I know how to retrieve/send data with AJAX technique. I know basics of Canvas API used in browser. I have basic knowledge in PHP and Wordpress (development).",
+		"Learning Achievement": "I did many online free courses to get in-depth knowledge on HTML5, CSS3 and Javascript like codecademy, free code camp, coursera etc. To verify my certificate visit  <a href='https://www.freecodecamp.com/surajitbasak109/front-end-certification' target='_blank'>https://www.freecodecamp.com/surajitbasak109/front-end-certification</a>. I made some project based on free code camp project work, you can see my portfolio work by visiting <a href='https://surajitbasak109.github.io/' target='_blank'>https://surajitbasak109.github.io/</a>."
+	},
+	"Personal Details": {
+		"Father Name": "Late Bhupen Basak",
+		"Sex": "Male",
+		"Date of Birth": "06/02/1989",
+		"Marital Status": "Single",
+		"Religion": "Hindu",
+		"Hobby": "Listening to song, play with Linux OS, read online article based on web designing and javascript."
+	},
+	"Declaration": "I here by declerd that the information provided hear by me is true to the best of my knowledge and belief."
+}
