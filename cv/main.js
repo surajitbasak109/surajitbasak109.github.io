@@ -17,8 +17,7 @@ getCVData('cv.json', function (resp) {
 	html += '<section class="education-qualification"><h3>Education Qualification</h3><hr>';
 	for (var edu in cv["Education Qualification"]) {
 		html += '<div class="'+ edu.toLowerCase() +'"><h4>'+ edu + '</h4>';
-		for (var lvl in cv["Education Qualification"][edu])
-			html += update(cv["Education Qualification"][edu][lvl])
+		html += update(cv["Education Qualification"][edu]);
 		html += '</div>';
 	}
 	html += '</section>';
