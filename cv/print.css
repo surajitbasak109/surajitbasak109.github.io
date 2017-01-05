@@ -56,10 +56,26 @@ h4 {
 #root {
     background: #fff;
     padding: 1rem;
+    position: relative;
 }
 
 section {
     margin-bottom: 1rem;
+}
+
+.avatar {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.avatar img {
+    display: block;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 10px;
 }
 
 .working-experience ul {

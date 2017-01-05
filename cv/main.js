@@ -8,6 +8,8 @@ getCVData('cv.json', function (resp) {
 	html += update(cv["Present Address"]);
 	html += '</section>';
 
+	html += '<div class="avatar"><img src="' + cv['avatar'] + '" alt="Avatar Image"></div>'
+
 	html += '<section class="working-experience"><h3>Working Experience</h3><hr><ul>';
 	for (var exp in cv["Working Experience"])
 		html += '<li>' + cv["Working Experience"][exp] + '</li>';
