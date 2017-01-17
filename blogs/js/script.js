@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+jQuery(document).ready(function () {	
 	var s = 1170;
 	if ($(window).width() > s) {
 		var i = $(".navbar-custom").height();
@@ -11,4 +11,5 @@ jQuery(document).ready(function () {
 				this.previousTop = s
 		})
 	}
+
 });
