@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Web Design</title>
+</head>
+<body>
+
+    <div id="wrap">
+      <header class="header">
+        <div class="container">
+          <div class="logo three-column">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="Image Logo">
+            </a>
+          </div>
+          <div class="search-wrap nine-column">
+            <div class="search-container pull-right">
+              <form action="index.html" method="get" id="searchForm">
+                <label for="q"><span class="screen-reader">Search</span>
+                <input type="search" name="q" id="q">
+                <button type="submit" name="button" class="search-btn">
+                  <span class="fa fa-search"></span>
+                </button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our work</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="banner">
+        <div class="container">
+          <h3>Welcome to the</h3>
+          <h2>Lorem Ipsum ipsius</h2>
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, officia placeat totam quo facere quibusdam, est natus minus in fugiat deleniti, labore saepe accusantium ducimus. Facere dolore vel velit deleniti.</p>
+          </div>
+        </div>
+      </section>
+      <section class="page-content">
+        <div class="container">
+          <div class="left-sidebar four-column">
+            <h3>Category</h3>
+            <ul class="category-menu">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#wrap-up">Wrap Up</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+              <li><a href="#">Lorem ipsum dolor sit</a></li>
+            </ul>
+          </div>
+          <div class="content eight-column">
+            <h2 id="introduction">Introduction</h2>
+            <p>You wanna make a logo right? For this demonstration I will use open source application GIMP (GNU Image Manipulation Program). It's a free software raster graphics editor. And it is cross platform, it means it can be used on Linux, Windows and MAC OS X. You can download it from <a href="https://www.gimp.org/downloads/" target="_blank">this link</a>. If you don't have it, then go and grab it from there.</p>
+
+            <img src="img/gimp2.8.png" alt="GIMP" class="img-responsive">
+
+            <p>So, if you have GIMP then open it up. After that we will create our first logo with it.</p>
+            <h2 id="wrap-up">Wrap up</h2>
+            <p>I assume, you already opened GIMP, so at first we are going to make a new file, so when it asks for width and height for this image make it as 1024x1024 (widthxheight) and click on the advanced option and choose 300<span title="pixel per inche">ppi</span></p> for X and Y resolution. Then click <strong>OK</strong>.
+            <p>Now we need guide ruler for our convenience. So, click on image option from the title/menu bar then navigate to <em>Guides</em> and choose <strong>New Guides (by Percent)</strong></p>. A dialogue box will appear, then choose Horizontal direction, and for position (in percent) choose 50 and then click ok. Again navigatte to Guides (New Guides by Percent) and choose vertical option and for position choose 50 in percent. You will see two guides(horizontal and vertical) appeared on the image.
+            <p>Now select <strong>Ellipse Select Tool</strong> then, choose <em>Expand from center</em> and <em>Fixed</em> from the bottom option. After that move your mouse to center of the image where two guides are joins together. Now click on it and expand your circle until the circle covers up your image.</p>
+
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        footer information goes
+      </footer>
+    </div>
+
+</body>
+</html>
