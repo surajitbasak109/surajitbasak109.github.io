@@ -1,8 +1,13 @@
 [
     {
         "title": "Wiki Terminal",
-        "link": "http://codepen.io/regexp/full/XNPmWj",
+        "link": "https://surajitbasak109.github.io/project/design1/",
         "img": "https://i.imgur.com/OViAFCx.jpg"
+	},
+    {
+        "title": "Web Design",
+        "link": "http://codepen.io/regexp/full/XNPmWj",
+        "img": "https://i.imgur.com/WdMGRJA.jpg"
 	},
     {
         "title": "Code Editor",
