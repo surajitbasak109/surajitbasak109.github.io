@@ -1,12 +1,17 @@
 [
     {
         "title": "Wiki Terminal",
-        "link": "https://surajitbasak109.github.io/project/design1/",
+        "link": "http://codepen.io/regexp/full/XNPmWj",
         "img": "https://i.imgur.com/OViAFCx.jpg"
 	},
     {
+        "title": "Republic Day",
+        "link": "https://surajitbasak109.github.io/project/republic/",
+        "img": "https://i.imgur.com/lHtGkQL.jpg"
+	},
+    {
         "title": "Web Design",
-        "link": "http://codepen.io/regexp/full/XNPmWj",
+        "link": "https://surajitbasak109.github.io/project/design1/",
         "img": "https://i.imgur.com/WdMGRJA.jpg"
 	},
     {
