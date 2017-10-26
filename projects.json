@@ -83,6 +83,11 @@
         "title": "Future Fight Web Page",
         "link": "project/mff/",
         "img": "img/pr-3.jpg"
+	},
+    {
+        "title": "Left Side Fixed",
+        "link": "project/fixedleftcol",
+        "img": "https://i.imgur.com/oBOcwVv.png"
 	}
 
 ]
