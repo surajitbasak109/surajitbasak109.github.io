@@ -86,8 +86,13 @@
 	},
     {
         "title": "Left Side Fixed",
-        "link": "project/fixedleftcol",
+        "link": "project/fixedleftcol/",
         "img": "https://i.imgur.com/oBOcwVv.png"
+	},
+    {
+        "title": "Fork Towards",
+        "link": "project/forktowards/",
+        "img": "https://i.imgur.com/RkVp1IS.png"
 	}
 
 ]
