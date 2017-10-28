@@ -93,6 +93,11 @@
         "title": "Fork Towards",
         "link": "project/forktowards/",
         "img": "https://i.imgur.com/RkVp1IS.png"
+	},
+    {
+        "title": "Web Design Depot",
+        "link": "project/wdd/",
+        "img": "img/wdd.png"
 	}
 
 ]
