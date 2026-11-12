@@ -26,4 +26,23 @@ const notes = defineCollection({
   }),
 });
 
-export const collections = { blog, notes };
+// Projects: add a .md file to src/content/projects/
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+  schema: z.object({
+    title: z.string(),
+    tagline: z.string(),
+    repo: z.string().url().optional(),
+    demo: z.string().url().optional(),
+    download: z.string().url().optional(),
+    tech: z.array(z.string()).default([]),
+    status: z.enum(['Active', 'Stable', 'Archived']).default('Active'),
+    year: z.number(),
+    featured: z.boolean().default(false),
+    order: z.number().default(100),
+    cover: z.string().optional(),
+    coverAlt: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, notes, projects };

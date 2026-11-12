@@ -1,11 +1,11 @@
 // Edit this file to update your name, bio and links across the site.
 export const SITE = {
   title: 'Surajit Basak',
-  role: 'Software Development Engineer',
+  role: 'Senior Software Engineer',
   description:
-    'Web software engineer from West Bengal, India, with 5+ years of experience building robust web applications.',
+    'Senior software engineer from West Bengal, India, with 7+ years of experience building backend and full-stack applications with Node.js, TypeScript, Laravel and AWS.',
   location: 'Siliguri, West Bengal, India',
-  employer: 'Packt Publishing',
+  employer: 'Capital Numbers',
   avatar: '/images/profile-surajit.jpg',
   resume: '/files/resume.pdf',
   email: 'surajitbasak109@gmail.com',
@@ -17,6 +17,7 @@ export const SITE = {
   ],
   nav: [
     { label: 'Home', href: '/' },
+    { label: 'Projects', href: '/projects/' },
     { label: 'Blog', href: '/blog/' },
     { label: 'Notes', href: '/notes/' },
     { label: 'Resume', href: '/files/resume.pdf' },

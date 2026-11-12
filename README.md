@@ -17,6 +17,7 @@ npm run build    # outputs to dist/
 | Name, bio, social links, nav | `src/site.ts` |
 | Blog post | `src/content/blog/<slug>.md` (see `my-first-post.md`; `draft: true` hides it) |
 | Note / interview prep | `src/content/notes/<slug>.md` with `title`, `group`, optional `order`, `difficulty`, `link` |
+| Project | `src/content/projects/<slug>.md` with `title`, `tagline`, `year`, optional `repo`, `demo`, `download`, `tech`, `featured`, `order`, `cover` |
 | Resume, images | `public/files/`, `public/images/` |
 
 ## Deploy

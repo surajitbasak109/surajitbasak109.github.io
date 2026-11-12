@@ -78,6 +78,11 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
   nav { display: flex; align-items: center; gap: 0.25rem; flex-wrap: wrap; }
   nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; padding: 0.35rem 0.6rem; border-radius: 6px; }
   nav a:hover, nav a[aria-current='page'] { color: var(--text); background: var(--accent-soft); }
+  @media (max-width: 480px) {
+    .bar { padding-top: 0.5rem; padding-bottom: 0.35rem; gap: 0.25rem; }
+    nav { gap: 0; margin-left: -0.45rem; }
+    nav a { font-size: 0.9rem; padding: 0.3rem 0.45rem; }
+  }
   #theme { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0.4rem; border-radius: 6px; display: inline-flex; }
   #theme:hover { color: var(--text); background: var(--accent-soft); }
   .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; padding-top: 1.5rem; padding-bottom: 2.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }

@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({ params: { id: project.id }, props: { project } }));
+}
+const { project } = Astro.props;
+const d = project.data;
+const { Content } = await render(project);
+---
+<Base title={d.title} description={d.tagline}>
+  <a class="back" href="/projects/">← All projects</a>
+  <p class="eyebrow">{d.year} · {d.status}</p>
+  <h1>{d.title}</h1>
+  <p class="lead">{d.tagline}</p>
+  <div class="actions">
+    {d.demo && <a class="btn primary" href={d.demo} rel="noopener">Open live site ↗</a>}
+    {d.download && <a class="btn primary" href={d.download} rel="noopener">Download ↗</a>}
+    {d.repo && <a class="btn" href={d.repo} rel="noopener">View code on GitHub ↗</a>}
+  </div>
+  <ul class="tech">{d.tech.map((t) => <li class="tag">{t}</li>)}</ul>
+  {d.cover && <img class="cover" src={d.cover} alt={d.coverAlt ?? `Screenshot of ${d.title}`} loading="lazy" />}
+  <article class="prose"><Content /></article>
+</Base>
+
+<style>
+  .back { font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 1.5rem; }
+  h1 { margin-bottom: 0.4rem; }
+  .lead { font-size: 1.12rem; color: var(--muted); margin: 0 0 1.25rem; }
+  .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .tech { list-style: none; padding: 0; margin: 0 0 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .cover { display: block; border: 1px solid var(--border); border-radius: var(--radius); margin: 0 0 2rem; }
+</style>
