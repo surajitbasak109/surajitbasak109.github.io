@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const notes = (await getCollection('notes')).sort(
+  (a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title),
+);
+const groups = [...new Set(notes.map((n) => n.data.group))];
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+---
+<Base title="Notes" description="Interview preparation and study notes by Surajit Basak.">
+  <p class="eyebrow">Notes</p>
+  <h1>Preparation guide</h1>
+  <p class="muted">Questions, answers and worked solutions I keep for interview preparation.</p>
+  {groups.map((g) => (
+    <section>
+      <h2 id={slug(g)}>{g}</h2>
+      <ul class="list">
+        {notes.filter((n) => n.data.group === g).map((n) => (
+          <li>
+            <a href={`/notes/${n.id}/`}>
+              <span class="t">{n.data.title}{n.data.description && <span class="d">{n.data.description}</span>}</span>
+              {n.data.difficulty && <span class="tag">{n.data.difficulty}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>

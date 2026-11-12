@@ -1,0 +1,87 @@
+---
+import '../styles/global.css';
+import { SITE } from '../site';
+
+interface Props { title?: string; description?: string; }
+const { title, description = SITE.description } = Astro.props;
+const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} — ${SITE.role}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname;
+const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(SITE.avatar, Astro.site)} />
+    <meta name="twitter:card" content="summary" />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="/">surajit<span>.basak</span></a>
+        <nav>
+          {SITE.nav.map((n) => (
+            <a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
+          ))}
+          <button id="theme" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="wrap site-footer">
+      <span>© {new Date().getFullYear()} {SITE.title}</span>
+      <span class="links">
+        {SITE.links.map((l) => <a href={l.href} rel="me noopener">{l.label}</a>)}
+        <a href="/rss.xml">RSS</a>
+      </span>
+    </footer>
+    <script is:inline>
+      document.getElementById('theme').addEventListener('click', () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme
+          ? root.dataset.theme === 'dark'
+          : matchMedia('(prefers-color-scheme: dark)').matches;
+        root.dataset.theme = dark ? 'light' : 'dark';
+        try { localStorage.setItem('theme', root.dataset.theme); } catch {}
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .site-header { border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 10; }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.75rem; flex-wrap: wrap; }
+  .brand { font-family: var(--mono); font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+  .brand span { color: var(--accent); }
+  nav { display: flex; align-items: center; gap: 0.25rem; flex-wrap: wrap; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; padding: 0.35rem 0.6rem; border-radius: 6px; }
+  nav a:hover, nav a[aria-current='page'] { color: var(--text); background: var(--accent-soft); }
+  #theme { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0.4rem; border-radius: 6px; display: inline-flex; }
+  #theme:hover { color: var(--text); background: var(--accent-soft); }
+  .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; padding-top: 1.5rem; padding-bottom: 2.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+  .site-footer .links { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--muted); }
+  .site-footer a:hover { color: var(--accent); }
+</style>

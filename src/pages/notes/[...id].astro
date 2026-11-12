@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const notes = (await getCollection('notes')).sort(
+    (a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title),
+  );
+  return notes.map((note) => {
+    const siblings = notes.filter((n) => n.data.group === note.data.group);
+    const i = siblings.indexOf(note);
+    return { params: { id: note.id }, props: { note, prev: siblings[i - 1], next: siblings[i + 1] } };
+  });
+}
+const { note, prev, next } = Astro.props;
+const { Content } = await render(note);
+---
+<Base title={note.data.title} description={note.data.description}>
+  <a class="back" href="/notes/">← All notes</a>
+  <p class="eyebrow">{note.data.group}</p>
+  <h1>{note.data.title}</h1>
+  <p class="meta">
+    {note.data.difficulty && <span class="tag">{note.data.difficulty}</span>}
+    {note.data.link && <a href={note.data.link} rel="noopener">View problem on LeetCode ↗</a>}
+  </p>
+  <article class="prose"><Content /></article>
+  {(prev || next) && (
+    <nav class="pager">
+      {prev ? <a href={`/notes/${prev.id}/`}>← {prev.data.title}</a> : <span />}
+      {next && <a href={`/notes/${next.id}/`}>{next.data.title} →</a>}
+    </nav>
+  )}
+</Base>
+
+<style>
+  .back { font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 1.5rem; }
+  .meta { display: flex; gap: 0.9rem; align-items: center; flex-wrap: wrap; font-size: 0.92rem; margin: -0.25rem 0 2rem; }
+  .pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.95rem; }
+</style>
